@@ -1,0 +1,81 @@
+/*
+Changes default font to JetBrains Mono, a font designed to be
+legible to those with low vision
+JetBrainsMonoNLNerdFontMono-Light.ttf
+https://fonts.google.com/specimen/JetBrains+Mono
+*/
+
+/*
+@import url("https://mshaugh.github.io/nerdfont-webfonts/build/firacode-nerd-font.css");
+@import url("https://sanzcarlos.github.io/sanzcarlos.css");
+* {
+    font-family: "FiraCode Nerd Font";
+}
+*/
+
+.theme-dark {
+    /* HSL Color */
+    --inline-title:  hsla(204,100%,37%,1);
+    --text-title-h1: hsla(204,100%,37%,1);
+    --text-title-h2: hsla(264,100%,37%,1);
+    --text-title-h3: hsla(324,100%,37%,1);
+    --text-title-h4: hsla(024,100%,37%,1);
+    --text-title-h5: hsla(084,100%,37%,1);
+    --text-title-h6: hsla(144,100%,37%,1);
+  
+    /* font family */
+    --font-default: "JetBrainsMonoNL Nerd Font Mono"; /* Esta fuente la tenemos que tener instalada en local*/
+    --font-family-h1: var(--font-default);
+    --font-family-h2: var(--font-default);
+    --font-family-h3: var(--font-default);
+    --font-family-h4: var(--font-default);
+    --font-family-h5: var(--font-default);
+    --font-family-h6: var(--font-default);
+  }
+  
+  /* Default */
+  * {
+      font-family: var(--font-default) !important;
+  }
+  
+  /* Title */
+  .inline-title{
+    color: var(--inline-title);
+  }
+  
+  /* Headers */
+  
+  .markdown-preview-view h1,
+  .cm-header-1 {
+    color: var(--text-title-h1);
+    font-family: var(--font-family-h1);
+  }
+  .markdown-preview-view h2,
+  .cm-header-2 {
+    color: var(--text-title-h2);
+    font-family: var(--font-family-h2);
+  }
+  .markdown-preview-view h3,
+  .cm-header-3 {
+    color: var(--text-title-h3);
+    font-family: var(--font-family-h3);
+  }
+  .markdown-preview-view h4,
+  .cm-header-4 {
+    color: var(--text-title-h4);
+    font-family: var(--font-family-h4);
+  }
+  .markdown-preview-view h5,
+  .cm-header-5 {
+    color: var(--text-title-h5);
+    font-family: var(--font-family-h5);
+  }
+  .markdown-preview-view h6,
+  .cm-header-6 {
+    color: var(--text-title-h6);
+    font-family: var(--font-family-h6);
+  }
+  
+  .cm-em {
+    color: var(--interactive-accent);
+  }
