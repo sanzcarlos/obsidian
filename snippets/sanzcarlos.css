@@ -23,8 +23,9 @@ https://fonts.google.com/specimen/JetBrains+Mono
     --text-title-h5: hsla(084,100%,37%,1);
     --text-title-h6: hsla(144,100%,37%,1);
   
-    /* font family */
-    --font-default: "JetBrainsMonoNL Nerd Font Mono"; /* Esta fuente la tenemos que tener instalada en local*/
+    /* font family -  CaskaydiaCove Nerd Font Mono, FiraCode Nerd Font Mono, FiraCode Nerd Font Mono Retina, JetBrainsMonoNL Nerd Font Mono*/
+    --font-default: "CaskaydiaCove Nerd Font Mono"; 
+    --font-weight: 100;
     --font-family-h1: var(--font-default);
     --font-family-h2: var(--font-default);
     --font-family-h3: var(--font-default);
@@ -36,7 +37,8 @@ https://fonts.google.com/specimen/JetBrains+Mono
   /* Default */
   * {
       font-family: var(--font-default) !important;
-  }
+      font-weight: var(--font-weight) !important;
+}
   
   /* Title */
   .inline-title{
